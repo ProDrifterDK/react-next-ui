@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #f8fafc; /* Color claro */
-  --foreground: #1e293b; /* Color oscuro */
+  --background: #f8fafc;
+  --foreground: #1e293b;
 
   /* Fuentes */
   --font-title: "Arial", sans-serif;
@@ -19,11 +19,8 @@
 }
 
 body {
+  margin: 0;
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-body);
-}
-
-h1, h2 {
-  font-family: var(--font-title);
 }
