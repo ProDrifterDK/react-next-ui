@@ -272,39 +272,41 @@ export default function Home() {
         <p className="text-gray-600 text-center text-lg">
           Browse for assets needed to report and present analysis.
         </p>
-        <div className="flex justify-between gap-4 bg-gray-100 rounded-md shadow-sm p-2">
-          <button
-            className={`px-16 py-2 rounded-md font-medium ${currentTab === "featured" ? "bg-white text-gray-900" : "text-gray-500 hover:text-gray-900"
-              }`}
-            onClick={() => setCurrentTab("featured")}
-            aria-label="Show Featured tab"
-          >
-            Featured
-          </button>
-          <button
-            className={`px-16 py-2 rounded-md font-medium ${currentTab === "kpi" ? "bg-white text-gray-900" : "text-gray-500 hover:text-gray-900"
-              }`}
-            onClick={() => setCurrentTab("kpi")}
-            aria-label="Show KPI tab"
-          >
-            KPI
-          </button>
-          <button
-            className={`px-16 py-2 rounded-md font-medium ${currentTab === "layouts" ? "bg-white text-gray-900" : "text-gray-500 hover:text-gray-900"
-              }`}
-            onClick={() => setCurrentTab("layouts")}
-            aria-label="Show Layouts tab"
-          >
-            Layouts
-          </button>
-          <button
-            className={`px-16 py-2 rounded-md font-medium ${currentTab === "storyboards" ? "bg-white text-gray-900" : "text-gray-500 hover:text-gray-900"
-              }`}
-            onClick={() => setCurrentTab("storyboards")}
-            aria-label="Show Storyboards tab"
-          >
-            Storyboards
-          </button>
+        <div className="overflow-x-auto bg-gray-100 rounded-md shadow-sm p-2">
+          <div className="flex gap-4 w-max">
+            <button
+              className={`px-16 py-2 rounded-md font-medium text-center ${currentTab === "featured" ? "bg-white text-gray-900" : "text-gray-500 hover:text-gray-900"
+                }`}
+              onClick={() => setCurrentTab("featured")}
+              aria-label="Show Featured tab"
+            >
+              Featured
+            </button>
+            <button
+              className={`px-16 py-2 rounded-md font-medium text-center ${currentTab === "kpi" ? "bg-white text-gray-900" : "text-gray-500 hover:text-gray-900"
+                }`}
+              onClick={() => setCurrentTab("kpi")}
+              aria-label="Show KPI tab"
+            >
+              KPI
+            </button>
+            <button
+              className={`px-16 py-2 rounded-md font-medium text-center ${currentTab === "layouts" ? "bg-white text-gray-900" : "text-gray-500 hover:text-gray-900"
+                }`}
+              onClick={() => setCurrentTab("layouts")}
+              aria-label="Show Layouts tab"
+            >
+              Layouts
+            </button>
+            <button
+              className={`px-16 py-2 rounded-md font-medium text-center ${currentTab === "storyboards" ? "bg-white text-gray-900" : "text-gray-500 hover:text-gray-900"
+                }`}
+              onClick={() => setCurrentTab("storyboards")}
+              aria-label="Show Storyboards tab"
+            >
+              Storyboards
+            </button>
+          </div>
         </div>
         <div ref={searchRef} className="relative w-full mb-4">
           <input
