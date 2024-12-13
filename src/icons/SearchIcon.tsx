@@ -3,7 +3,7 @@ import React from "react";
 const SearchIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
   <svg
     fill="#8F9098"
-    height="24" // Ajustado para que encaje mejor en el diseño
+    height="24"
     width="24"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
